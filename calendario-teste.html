@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<script src='../packages/core/locales-all.js'></script>
+<link href='../packages/core/main.css' rel='stylesheet' />
+<link href='../packages/daygrid/main.css' rel='stylesheet' />
+<link href='../packages/timegrid/main.css' rel='stylesheet' />
+<link href='../packages/list/main.css' rel='stylesheet' />
+<script src='../packages/core/main.js'></script>
+<script src='../packages/interaction/main.js'></script>
+<script src='../packages/daygrid/main.js'></script>
+<script src='../packages/timegrid/main.js'></script>
+<script src='../packages/list/main.js'></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+			 locale:'pt-br',
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+      },
+      
+      navLinks: true, // can click day/week names to navigate views
+      businessHours: true, // display business hours
+      editable: true,
+      events: 
+     [
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-01"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-02"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-03"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-04"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-08"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-10"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-11"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-12"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-15"
+        },
+        {
+            title: "INT",
+color: "#009900",
+            start: "2019-07-16"
+        },
+        {
+            title: "PRÁTICA",
+            start: "2019-07-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-18"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-19"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-22"
+        },
+        {
+            title: "BASF",
+            start: "2019-01-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-24"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-07-25"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-29"
+        },
+        {
+            title: "BASF",
+            start: "2019-07-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-07-31"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-01"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-02"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-05"
+        },
+        {
+            title: "BASF",
+            start: "2019-08-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-07"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-08-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-09"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-12"
+        },
+        {
+            title: "BASF",
+            start: "2019-08-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-12"
+        },
+        {
+            title: "BASF",
+            start: "2019-08-13"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-15"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-16"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-19"
+        },
+        {
+            title: "BASF",
+            start: "2019-08-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-21"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-08-22"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-26"
+        },
+        {
+            title: "BASF",
+            start: "2019-08-27"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-08-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-02"
+        },
+        {
+            title: "BASF",
+            start: "2019-09-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-04"
+        },
+        {
+            title: "BASC ",
+            start: "2019-09-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-09"
+        },
+        {
+            title: "BASF",
+            start: "2019-09-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-13"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-16"
+        },
+        {
+            title: "BASF",
+            start: "2019-09-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-18"
+        },
+        {
+            title: "BASC ",
+            start: "2019-09-19"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-23"
+        },
+        {
+            title: "BASF",
+            start: "2019-09-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-25"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-27"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-09-30"
+        },
+        {
+            title: "BASF",
+            start: "2019-10-01"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-02"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-10-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-04"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-07"
+        },
+        {
+            title: "BASF",
+            start: "2019-10-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-09"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-14"
+        },
+        {
+            title: "BASF",
+            start: "2019-10-15"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-16"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-10-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-18"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-21"
+        },
+        {
+            title: "BASF",
+            start: "2019-10-22"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-25"
+        },
+        {
+            title: " PRATICA",
+            start: "2019-10-28"
+        },
+        {
+            title: "BASF",
+            start: "2019-10-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-10-30"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-10-31"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-01"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-04"
+        },
+        {
+            title: "BASF",
+            start: "2019-11-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-06"
+        },
+        {
+            title: "BASF",
+            start: "2019-11-07"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-11"
+        },
+        {
+            title: "BASF",
+            start: "2019-11-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-13"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-11-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-18"
+        },
+        {
+            title: "BASF",
+            start: "2019-11-19"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-22"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-25"
+        },
+        {
+            title: "BASF",
+            start: "2019-11-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-27"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2019-11-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-11-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-02"
+        },
+        {
+            title: "BASF",
+            start: "2020-12-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-04"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-09"
+        },
+        {
+            title: "BASF",
+            start: "2020-12-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-12-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-12-13"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2019-12-16"
+        },
+        {
+            title: "BASF",
+            start: "2019-12-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-13"
+        },
+        {
+            title: "BASF",
+            start: "2020-01-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-15"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-16"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-20"
+        },
+        {
+            title: "BASF",
+            start: "2020-01-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-22"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2020-01-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-27"
+        },
+        {
+            title: "BASF",
+            start: "2020-01-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-01-31"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-03"
+        },
+        {
+            title: "BASF",
+            start: "2020-02-04"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-05"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2020-02-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-07"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-10"
+        },
+        {
+            title: "ADMF",
+            start: "2020-02-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-13"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-17"
+        },
+        {
+            title: "ADMF",
+            start: "2020-02-18"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-19"
+        },
+        {
+            title: "BASC",
+color: "#CC0066",
+
+            start: "2020-02-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-26"
+        },
+        {
+            title: "ADMF",
+            start: "2020-02-27"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-02-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-02"
+        },
+        {
+            title: "ADMF",
+            start: "2020-03-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-04"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-03-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-09"
+        },
+        {
+            title: "ADMF",
+            start: "2020-03-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-13"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-16"
+        },
+        {
+            title: "ADMF",
+            start: "2020-03-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-18"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-03-19"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-23"
+        },
+        {
+            title: "ADMF",
+            start: "2020-03-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-25"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-27"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-03-30"
+        },
+        {
+            title: "ADMF",
+            start: "2020-03-31"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-01"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-04-02"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-06"
+        },
+        {
+            title: "ADMF",
+            start: "2020-04-07"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-09"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-13"
+        },
+        {
+            title: "ADMF",
+            start: "2020-04-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-15"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-04-16"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-20"
+        },
+        {
+            title: "ADMF",
+            start: "2020-04-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-22"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-27"
+        },
+        {
+            title: "ADMF",
+            start: "2020-04-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-04-29"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-04-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-04"
+        },
+        {
+            title: "ADMF",
+            start: "2020-05-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-07"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-11"
+        },
+        {
+            title: "ADMF",
+            start: "2020-05-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-13"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-05-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-15"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-18"
+        },
+        {
+            title: "ADMF",
+            start: "2020-05-19"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-22"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-25"
+        },
+        {
+            title: "ADMF",
+            start: "2020-05-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-26"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-05-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-05-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-01"
+        },
+        {
+            title: "ADMF",
+            start: "2020-06-02"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-04"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-05"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-08"
+        },
+        {
+            title: "ADMF",
+            start: "2020-06-09"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-15"
+        },
+        {
+            title: "ADMF",
+            start: "2020-06-16"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-18"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-19"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-22"
+        },
+        {
+            title: "ADMF",
+            start: "2020-06-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-24"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-06-25"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-06-29"
+        },
+        {
+            title: "ADMF",
+            start: "2020-06-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-01"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-02"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-06"
+        },
+        {
+            title: "ADMF",
+            start: "2020-07-07"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-13"
+        },
+        {
+            title: "ADMF",
+            start: "2020-07-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-15"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-16"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-20"
+        },
+        {
+            title: "ADMF",
+            start: "2020-07-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-22"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-07-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-27"
+        },
+        {
+            title: "ADMF",
+            start: "2020-07-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-07-31"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-03"
+        },
+        {
+            title: "ADMF",
+            start: "2020-08-04"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-05"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-08-06"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-07"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-10"
+        },
+        {
+            title: "ADMF",
+            start: "2020-08-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-12"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-13"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-17"
+        },
+        {
+            title: "ADMF",
+            start: "2020-08-18"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-19"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-08-20"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-25"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-26"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-27"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-08-31"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-01"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-02"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-09-03"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-04"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-08"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-09"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-10"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-11"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-14"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-15"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-16"
+        },
+        {
+            title: "ADMC",
+color: "#6600CC",
+            start: "2020-09-17"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-18"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-21"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-22"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-23"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-24"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-25"
+        },
+        {
+            title: "PRATICA",
+            start: "2020-09-28"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-29"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-09-30"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-10-01"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-10-02"
+        },
+        {
+            title: "PRATICA",
+color: "#202020",
+            start: "2020-10-05"
+        }
+    ]
+
+    });
+
+    calendar.render();
+  });
+
+</script>
+<style>
+
+  body {
+    margin: 40px 10px;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+</style>
+</head>
+<body>
+
+  <div id='calendar'></div>
+
+</body>
+</html>
